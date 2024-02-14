@@ -1,0 +1,142 @@
+
+
+/* Header Styling: */
+
+header {
+    background-color: #007bff; 
+    padding: 10px 20px; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.header-title {
+    text-decoration: none;
+    color: inherit; 
+    display: flex; 
+    align-items: center;
+}
+
+.header-title:hover {
+    opacity: 0.8; 
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 24px; 
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px; 
+    font-size: 16px; 
+}
+
+header nav {
+    padding-right: 20px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Body/Content Styling: */ 
+
+html, body {
+    height: 100%; 
+    margin: 0;
+    background-color: lightgray;
+}
+
+body {
+    padding-top: 60px;
+}
+
+.content-wrap {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    
+}
+
+@media (min-width: 768px) {
+    .content-wrap {
+        flex-direction: row;
+    }
+}
+
+
+.content-wrap section {
+    border: 5px solid #007bff;
+    padding: 10px;
+    margin:10px;
+
+    display:flex;
+    flex-direction: row;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+    .content-wrap section {
+        flex-direction: column;
+    }
+}
+
+.content-wrap h3, p  {
+    margin: 10px;
+}
+
+.content-wrap section img {
+    border: 2px solid gray;
+    width: 50%; 
+    height: auto;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+
+
+/* Footer styling */
+
+
+footer.primary-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: darkgray;
+    padding: 20px; 
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+}
+
+/* Navigation links styling */
+footer.primary-footer nav a {
+    margin: 0 15px; 
+    color: #333; 
+    text-decoration: none; 
+    font-size: 16px; 
+}
+
+/* Hover effect for links */
+footer.primary-footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright text styling */
+footer.primary-footer small.copyright {
+    display: block; 
+    margin-top: 20px;
+    float: center;
+    color: lightgray;
+    font-size: 14px; 
+}
+
