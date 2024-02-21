@@ -1,0 +1,237 @@
+
+<!-- 1. create HTML5 doctype -->
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">  
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+  <meta name="William Loving" content="define author of the page -- your name">
+  <meta name="Potential Home Page for Web App!" content="define a description of this page">
+  <meta name="movie review reviewers description rotten tomatoes" content="define keywords for search engines">  
+  
+  <!-- 2. include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 
+  Bootstrap is designed to be responsive to mobile.
+  Mobile-first styles are part of the core framework.
+   
+  width=device-width sets the width of the page to follow the screen-width
+  initial-scale=1 sets the initial zoom level when the page is first loaded   
+  -->
+  
+  <title>Bootstrap Starter HTML</title>
+  
+  <!-- 3. link bootstrap -->
+  <!-- if you choose to use CDN for CSS bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"  crossorigin="anonymous"> 
+  <!-- 
+  Use a link tag to link an external resource. A rel (relationship) specifies relationship between the current document and the linked resource. 
+  -->
+  
+  <!-- For development, we may want a better-printed CSS, but with larger download size.  Ignore "min"
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.css" rel="stylesheet"> 
+  -->
+  <!-- if you choose to download bootstrap and host it locally -->
+  <!-- <link rel="stylesheet" href="path-to-your-file/bootstrap.min.css" /> --> 
+  
+  <!-- include your CSS
+       by including your CSS last, anything you write may override (depending on specificity) the Bootstrap CSS
+  <link rel="stylesheet" href="your-custom.css" /> 
+  -->
+
+
+  <link rel="stylesheet/less" href="styles/custom.less" type="text/css">
+       
+</head>
+
+<body>
+
+    <nav class="navbar navbar-custom navbar-expand-lg m-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">RevuVue!</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reviews</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Account Info
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Account</a></li>
+                  <li><a class="dropdown-item" href="#">My Reviews</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Write Review</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+      <div id="carouselExample" class="carousel slide p-2" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        <div class="carousel-inner carousel-custom">
+          <div class="carousel-item active">
+            <img src="./images/oppenheimer2.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/tron.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/interstellar.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Oppenheimer
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>Oppenheimer</strong> is a gripping biographical drama that delves into the complex life of J. Robert Oppenheimer, the theoretical physicist often dubbed the "father of the atomic bomb." The film intricately explores Oppenheimer's pivotal role in the Manhattan Project during World War II, his subsequent political persecution during the Red Scare, and the ethical dilemmas surrounding his contributions to nuclear weaponry. Directed with a keen eye for historical detail and moral ambiguity, the movie offers a deep dive into the psyche of a man whose groundbreaking work forever altered the course of human history, prompting viewers to contemplate the profound consequences of scientific discovery.            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Tron: Legacy
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>Tron: Legacy</strong> is a visually stunning science fiction film that serves as a sequel to the 1982 cult classic "Tron." The story follows Sam Flynn, the tech-savvy son of Kevin Flynn, as he embarks on a daring journey into the digital world of The Grid, in search of his long-lost father. With groundbreaking visual effects and a pulsating electronic soundtrack by Daft Punk, the film creates an immersive digital universe. Themes of identity, legacy, and freedom are explored within this vividly realized cyber landscape, making "Tron: Legacy" a thrilling adventure and a worthy successor to its groundbreaking predecessor.            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Interstellar
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>Interstellar</strong> is a visually breathtaking and emotionally charged science fiction epic directed by Christopher Nolan. The film follows a group of astronauts who embark on a daunting mission through a wormhole in search of a new habitable planet for humanity, as Earth is on the brink of collapse. With its intricate narrative that weaves together themes of love, sacrifice, and the survival of the human spirit, "Interstellar" challenges the boundaries of space, time, and human understanding. The film is renowned for its scientifically accurate depiction of space phenomena, its profound emotional depth, and Hans Zimmer's hauntingly beautiful score.            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 p-4">
+                <div class="card card-custom" style="width: 18rem;">
+                    <img src="images/review.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Oppenheimer</h5>
+                    <p class="card-text">Read, Comment, and Like/Dislike Other Users <strong>Oppenheimer</strong> Reviews!.</p>
+                    <a href="#" class="btn btn-primary">Reviews</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 p-4">
+                <div class="card card-custom" style="width: 18rem;">
+                    <img src="images/review.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Tron</h5>
+                    <p class="card-text">Read, Comment, and Like/Dislike Other Users <strong>Tron: Legacy</strong> Reviews!. </p>
+                    <a href="#" class="btn btn-primary">Reviews</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 p-4">
+                <div class="card card-custom" style="width: 18rem;">
+                    <img src="images/review.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Interstellar</h5>
+                    <p class="card-text">Read, Comment, and Like/Dislike Other Users <strong>Interstellar</strong> Reviews!.</p>
+                    <a href="#" class="btn btn-primary">Reviews</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary modal-button my-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Sign up for Emails?
+            </button>
+        </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Email:</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <input type="text">
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Signup</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="alert alert-warning" role="alert">
+    This Page is Not Finished!
+    </div>
+
+
+    <footer class="primary-footer">
+
+        <nav> 
+            <a href="account.html"> Account Info  </a>
+            <a href="movies.html">  Movies  </a>
+            <a href="tv.html">  TV Shows  </a>
+            <a href="createReview.html">  Write a Review?  </a>
+        </nav>
+
+        <small class="copyright"> RevuVue Copyright 2024 </small>
+
+    </footer>
+
+    <!-- 4. include bootstrap Javascript
+        Why at the end of the body?
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+
+</body>
+</html>

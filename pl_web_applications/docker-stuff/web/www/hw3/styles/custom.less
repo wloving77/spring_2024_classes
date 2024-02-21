@@ -1,0 +1,84 @@
+// Variables
+@primary-color: #265d81; // A color you'll use in multiple places
+@secondary-color: white;
+
+// Mixins
+.border-radius-mixin(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+// Utilizing the variable and mixin
+.navbar-custom {
+    background-color: @primary-color;
+    .border-radius-mixin(10px); // Using mixin for border-radius
+  
+    // Nested selector for navbar links
+    a {
+      color: lighten(white, 20%);
+      &:hover {
+        color: darken(white, 10%);
+      }
+    }
+
+  }
+  
+  .carousel-item {
+    img {
+        .border-radius-mixin(10px);
+    }
+  }
+  
+  .card-custom {
+    background-color: lighten(@primary-color, 5%);
+    .border-radius-mixin(25px); // Using mixin for border-radius
+
+    .card-body {
+      p {
+        color: darken(@secondary-color, 20%);
+      }
+
+      h5 {
+        color: @secondary-color
+      }
+
+    }
+  }
+
+
+.carousel-item img{
+    height: 400px;
+    width: 80%;
+}
+
+footer.primary-footer {
+    bottom: 0;
+    width: 100%;
+    background-color: darkgray;
+    padding: 20px; 
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+}
+
+/* Navigation links styling */
+footer.primary-footer nav a {
+    margin: 0 15px; 
+    color: #333; 
+    text-decoration: none; 
+    font-size: 16px; 
+}
+
+/* Hover effect for links */
+footer.primary-footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright text styling */
+footer.primary-footer small.copyright {
+    display: block; 
+    margin-top: 20px;
+    float: center;
+    color: lightgray;
+    font-size: 14px; 
+}
