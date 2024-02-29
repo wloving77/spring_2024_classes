@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!-- Add the common CSS here -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"  crossorigin="anonymous"> 
+  <link rel="stylesheet/less" href="../general-styles/general.less" type="text/css">
+  <link rel="stylesheet/less" href="./styles/login-signup-modal.less" type="text/css">
+
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+
+        <nav class="navbar navbar-custom navbar-expand-lg">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">RevuVue!</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+        <div class="content">
+
+            <div class="centered-div">
+                <div class="login-container">
+
+                    <h1> RevuVue Signup! </h1>
+
+                    <form action="../reviews/" method="POST">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+
+                        <label for="password">Confirm Password:</label>
+                        <input type="password" id="password" name="password" required>
+
+                        <input type="submit" value="Signup">
+                    </form>
+
+                    <br>
+                    <a href="./login.html"> Login? </a>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <footer class="page-footer">
+
+            <nav> 
+                <a href="account.html"> Account Info  </a>
+                <a href="movies.html">  Movies  </a>
+                <a href="tv.html">  TV Shows  </a>
+                <a href="createReview.html">  Write a Review?  </a>
+            </nav>
+
+            <small class="copyright"> RevuVue Copyright 2024 </small>
+
+        </footer>
+
+    </div>
+
+
+    <!-- JS Imports: -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+//file for styling the carousel onn index.html: 
+
+@carousel-primary-color: #265d81; 
+
+
+.border-radius-mixin(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+  }
+
+
+.review-header-container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top:60px;
+
+  h2 {
+    padding: 15px;
+    background-color: @carousel-primary-color;
+    color: white;
+
+    .border-radius-mixin(20px);
+  }
+
+
+}
+
+
+.card-container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    margin: 50px;
+  }
+
+}
+
+

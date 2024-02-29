@@ -1,0 +1,87 @@
+//all auth specific styles here:
+
+
+@login-page-color: #265d81;
+@login-page-secondary-color: white;
+
+
+.border-radius-mixin(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+  }
+
+.centered-div {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    .login-container {
+        padding: 50px 50px 50px 50px;
+        margin-top: 100px;
+        background-color: @login-page-color;
+    
+        .border-radius-mixin(20px);
+            
+        h1 {
+            color: white;
+        }
+
+        form { 
+            display: flex;
+            flex-direction: column;
+
+
+            label {
+                color: white;
+                padding: 15px 0px 15px 0px;
+            }
+        
+            input[type="text"],
+            input[type="password"],
+            input[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                box-sizing: border-box; /* Includes padding in the width */
+            }
+        
+            input[type="submit"] {
+                background-color: @login-page-secondary-color;
+                color: black;
+                border: none;
+                margin-top: 40px;
+                cursor: pointer;
+        
+                &:hover {
+                    background-color: darken(@login-page-secondary-color, 80%);
+                    color:@login-page-secondary-color;
+                }
+        
+            }
+
+        }    
+
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:hover { 
+
+                text-decoration: underline;
+                color: @login-page-secondary-color;
+                cursor: pointer;
+
+            }
+
+        }
+
+    }
+
+}

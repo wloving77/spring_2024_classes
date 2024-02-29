@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head> 
+
+        <title> RevuVue! </title>
+
+
+        <!-- Styling Links: -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"  crossorigin="anonymous"> 
+        <link rel="stylesheet/less" href="../general-styles/general.less" type="text/css">
+        <link rel="stylesheet/less" href="styles/index.less" type="text/css">
+
+    </head>
+
+
+    <body> 
+        <div class="wrapper">
+
+            <!-- Navbar: -->
+            <nav class="navbar navbar-custom navbar-expand-lg">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="../landing/">RevuVue!</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../movie-reviews/">Movie Reviews!</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">TV Show Reviews!</a>
+                      </li>
+                    </ul>
+                    <button onclick="location.href='../auth/login.html';" class="btn" type="submit">Login</button>
+                    <button onclick="location.href='../auth/signup.html';" class="btn" type="submit">SignUp</button>
+                </div>
+                </div>
+            </nav>
+            
+            <div class="content">
+
+                <!-- Page Stuff here-->
+
+
+                <!-- Carousel of Movie Posters: -->
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/cool_picture1.jpg" alt="A cool image of an interesting pattern">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5> Creativity </h5>
+                          <p>Let your personality shine. Unique perspectives make for compelling reads.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/cool_picture2.jpg" alt="A cool image of sparks flying">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5> Detail </h5>
+                          <p>Dive deep. The more specifics, the better. Help others visualize your experience.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/cool_picture3.jpg" alt="A cool image of a bridge">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5> Honesty </h5>
+                          <p> Speak your truth. Your genuine opinion is what counts.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+                <div class="descriptions">
+
+                    <div class="description-item">
+                        <h1> Create! </h1>
+                        <p> Dive into a world where your opinions shape the narrative. Write detailed reviews for your all-time favorite films and TV shows, or critique the latest releases. Challenge your writing skills, engage in lively discussions, and see how your views align with the community. Its not just about sharing; it's about connecting through shared cinematic journeys.</p>
+                    </div>
+                
+                    <div class="description-item">
+                        <h1> Explore! </h1>
+                        <p> Embark on an exploration of diverse opinions and critiques from a vibrant community of movie buffs and TV aficionados. Discover reviews that resonate with your taste or offer a new perspective on familiar titles. Navigate through a sea of insights and find those hidden gems that align with your cinematic preferences. Join groups that echo your passion for genres, directors, or eras, and enrich your viewing experience.</p>
+                    </div>
+                
+                    <div class="description-item">
+                        <h1> Personalize! </h1>
+                        <p> Tailor your cinematic universe to your liking. Select from an expansive catalog of movies and TV shows to craft a watchlist that speaks to your unique taste. With personalized recommendations based on your reviews and preferences, immerse yourself in an experience where every film review is a step closer to your next favorite movie. Make your voice heard and your choices count in a community that celebrates diversity in film appreciation.</p>
+                    </div>
+                
+                </div>
+                
+                
+                <div class="signup-login-banner">
+
+                    <h1> Login to Start Writing and Reading Reviews! </h1>
+
+                </div>
+
+
+                <!-- End of Page Stuff-->
+
+            </div>
+            
+            <footer class="page-footer">
+
+                <nav> 
+                    <a href="account.html"> Account Info  </a>
+                    <a href="movies.html">  Movies  </a>
+                    <a href="tv.html">  TV Shows  </a>
+                    <a href="createReview.html">  Write a Review?  </a>
+                </nav>
+        
+                <small class="copyright"> RevuVue Copyright 2024 </small>
+    
+            </footer>
+
+        </div>
+
+        <!-- JS Imports: -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+
+    </body>
+
+</html>
