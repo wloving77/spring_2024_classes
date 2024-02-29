@@ -17,9 +17,9 @@
     <div class="wrapper">
 
 
-        <nav class="navbar navbar-custom navbar-expand-lg">
+        <nav class="navbar navbar-custom navbar-expand-md">
             <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">RevuVue!</a>
+            <a class="navbar-brand" href="../index.html">RevuVue!</a>       
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 </ul>
@@ -34,17 +34,18 @@
 
                     <h1> RevuVue Signup! </h1>
 
-                    <form action="../reviews/" method="POST">
+                    <form action="../movie-reviews/" method="POST">
+
                         <label for="username">Username:</label>
                         <input type="text" id="username" name="username" required>
 
                         <label for="password">Password:</label>
                         <input type="password" id="password" name="password" required>
 
-                        <label for="password">Confirm Password:</label>
-                        <input type="password" id="password" name="password" required>
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
 
-                        <input type="submit" value="Signup">
+                        <input type="submit" name="signup-submit" value="Signup">
                     </form>
 
                     <br>
@@ -59,12 +60,11 @@
         <footer class="page-footer">
 
             <nav> 
-                <a href="account.html"> Account Info  </a>
-                <a href="movies.html">  Movies  </a>
-                <a href="tv.html">  TV Shows  </a>
-                <a href="createReview.html">  Write a Review?  </a>
+                <a href="../"> RevuVue!  </a>
+                <a href="../movie-reviews/">  Movies  </a>
+                <a href="../tv-reviews/">  TV Shows  </a>
             </nav>
-
+    
             <small class="copyright"> RevuVue Copyright 2024 </small>
 
         </footer>

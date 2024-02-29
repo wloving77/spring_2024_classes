@@ -5,6 +5,7 @@
     <head> 
 
         <title> RevuVue! </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
         <!-- Styling Links: -->
@@ -19,16 +20,19 @@
         <div class="wrapper">
 
             <!-- Navbar: -->
-            <nav class="navbar navbar-custom navbar-expand-lg">
+            <nav class="navbar navbar-custom navbar-expand-sm">
                 <div class="container-fluid">
                 <a class="navbar-brand" href="../landing/">RevuVue!</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="../movie-reviews/">Movie Reviews!</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">TV Show Reviews!</a>
+                        <a class="nav-link" aria-current="page" href="../tv-reviews/">TV Show Reviews!</a>
                       </li>
                     </ul>
                     <button onclick="location.href='../auth/login.html';" class="btn" type="submit">Login</button>
@@ -117,16 +121,15 @@
             
             <footer class="page-footer">
 
-                <nav> 
-                    <a href="account.html"> Account Info  </a>
-                    <a href="movies.html">  Movies  </a>
-                    <a href="tv.html">  TV Shows  </a>
-                    <a href="createReview.html">  Write a Review?  </a>
-                </nav>
-        
-                <small class="copyright"> RevuVue Copyright 2024 </small>
-    
-            </footer>
+              <nav> 
+                  <a href="../"> RevuVue!  </a>
+                  <a href="../movie-reviews/">  Movies  </a>
+                  <a href="../tv-reviews/">  TV Shows  </a>
+              </nav>
+      
+              <small class="copyright"> RevuVue Copyright 2024 </small>
+  
+          </footer>
 
         </div>
 

@@ -19,17 +19,20 @@
     }
 
     .carousel-caption {
+        display: flex;
+        flex-wrap: wrap;
         .border-radius-mixin(10px);
         background-color: @carousel-primary-color;
     }
-
-
 }
+
+
+
 
 .descriptions {
 
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 
   .description-item {
 
@@ -38,13 +41,22 @@
     padding: 15px;
     margin: 25px;
     color: white;
-    flex-basis: 1/3;
+    width: 100%;
 
     p {
       white-space: normal;
     }
 
   }
+}
+
+@media (min-width: 768px) {
+
+  .descriptions {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
 }
 
 .signup-login-banner {
