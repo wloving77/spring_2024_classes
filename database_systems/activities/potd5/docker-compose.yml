@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  webserver:
+    build:
+      context: .
+      dockerfile: Dockerfile.apache
+    volumes:
+      - ./apache:/var/www/html
+    ports:
+      - "8080:80"
+    networks:
+      - potd5network
+
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile.mysql
+    volumes:
+      - ./db/maintenance_system.sql:/docker-entrypoint-initdb.d/init-db.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: potd5
+      MYSQL_USER: wloving77
+      MYSQL_PASSWORD: 1234
+    ports:
+      - "3306:3306"
+    networks:
+      - potd5network
+
+
+networks:
+  potd5network:
+    driver: bridge
