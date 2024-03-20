@@ -1,16 +1,27 @@
 version: '3.8'
 
 services:
-  webserver:
+  frontend:
     build:
       context: .
-      dockerfile: Dockerfile.apache
+      dockerfile: Dockerfile.frontend
     volumes:
-      - ./apache:/var/www/html
+      - ./frontend:/var/www/html
     ports:
       - "8080:80"
     networks:
       - potd5network
+
+  backend:
+      build:
+        context: .
+        dockerfile: Dockerfile.backend
+      volumes:
+        - ./backend/:/app/
+      ports:
+        - "3000:3000"
+      networks:
+        - potd5network
 
   db:
     build:

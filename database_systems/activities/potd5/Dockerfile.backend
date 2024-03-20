@@ -1,0 +1,15 @@
+FROM node:latest
+
+WORKDIR /app
+
+COPY ./backend/server.js .
+COPY ./backend/package-lock.json .
+
+RUN npm install
+
+EXPOSE 3000
+
+ENV NODE_ENV=development
+
+CMD ["npm", "start"]
+
