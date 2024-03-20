@@ -1,18 +1,5 @@
 
-//overriding the default logic for the update button
-
-document.addEventListener('DOMContentLoaded', function() {
-
-  let updateButton = document.getElementById("cofmBtn");
-
-  updateButton.addEventListener('click', function(event) {
-    event.preventDefault();
-    validateInput();
-    updateRequest();
-  })
-
-});
-
+//checks that all input fields are filled correctly.
 function validateInput() {
 
   var requestedDate = document.getElementById('requestedDate').value;
