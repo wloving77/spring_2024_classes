@@ -2,15 +2,13 @@ FROM node:latest
 
 WORKDIR /app
 
-COPY ./backend/server.js .
-COPY ./backend/package.json .
-COPY ./backend/package-lock.json .
+ADD ./backend/server.js .
+ADD ./backend/package.json .
+ADD ./backend/package-lock.json .
 
-RUN npm install
+RUN npm install --verbose
 
 EXPOSE 3000
-
-ENV NODE_ENV=development
 
 CMD ["npm", "start"]
 

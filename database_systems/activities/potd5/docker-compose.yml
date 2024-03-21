@@ -31,6 +31,7 @@ services:
       dockerfile: Dockerfile.db
     volumes:
       - ./db/maintenance_system.sql:/docker-entrypoint-initdb.d/init-db.sql
+      - ./db/datastore://var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - MYSQL_USER=${DB_USER}
